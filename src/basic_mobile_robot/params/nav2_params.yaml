@@ -1,13 +1,13 @@
 amcl:
   ros__parameters:
     use_sim_time: True
-    alpha1: 0.002
-    alpha2: 0.002
-    alpha3: 0.002
-    alpha4: 0.002
-    alpha5: 0.002
+    alpha1: 0.2
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+    alpha5: 0.2
     base_frame_id: "base_footprint"
-    beam_skip_distance: 0.5
+    beam_skip_distance: 0.2
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
     do_beamskip: false
@@ -55,70 +55,66 @@ bt_navigator:
     global_frame: map
     robot_base_frame: base_footprint #base_link
     odom_topic: /odometry/filtered #/odom
+    transform_tolerance: 0.1
     bt_loop_duration: 10
-    default_server_timeout: 20
-    enable_groot_monitoring: True
-    groot_zmq_publisher_port: 1666
-    groot_zmq_server_port: 1667    
+    default_server_timeout: 20 
     # enable_groot_monitoring: True
     # groot_zmq_publisher_port: 1666
     # groot_zmq_server_port: 1667
     # default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
-    plugin_lib_names:
-    # - nav2_compute_path_to_pose_action_bt_node
-    # - nav2_follow_path_action_bt_node
-    # - nav2_back_up_action_bt_node
-    # - nav2_spin_action_bt_node
-    # - nav2_wait_action_bt_node
-    # - nav2_clear_costmap_service_bt_node
-    # - nav2_is_stuck_condition_bt_node
-    # - nav2_goal_reached_condition_bt_node
-    # - nav2_goal_updated_condition_bt_node
-    # - nav2_initial_pose_received_condition_bt_node
-    # - nav2_reinitialize_global_localization_service_bt_node
-    # - nav2_rate_controller_bt_node
-    # - nav2_distance_controller_bt_node
-    # - nav2_speed_controller_bt_node
-    # - nav2_truncate_path_action_bt_node
-    # - nav2_goal_updater_node_bt_node
-    # - nav2_recovery_node_bt_node
-    # - nav2_pipeline_sequence_bt_node
-    # - nav2_round_robin_node_bt_node
-    # - nav2_transform_available_condition_bt_node
-    # - nav2_time_expired_condition_bt_node
-    # - nav2_distance_traveled_condition_bt_node
 
+    # 'default_nav_through_poses_bt_xml' and 'default_nav_to_pose_bt_xml' are use defaults:
+    # nav2_bt_navigator/navigate_to_pose_w_replanning_and_recovery.xml
+    # nav2_bt_navigator/navigate_through_poses_w_replanning_and_recovery.xml
+    # They can be set here or via a RewrittenYaml remap from a parent launch file to Nav2.    
+
+    plugin_lib_names:
     - nav2_compute_path_to_pose_action_bt_node
     - nav2_compute_path_through_poses_action_bt_node
+    - nav2_smooth_path_action_bt_node
     - nav2_follow_path_action_bt_node
-    - nav2_back_up_action_bt_node
     - nav2_spin_action_bt_node
     - nav2_wait_action_bt_node
+    - nav2_assisted_teleop_action_bt_node
+    - nav2_back_up_action_bt_node
+    - nav2_drive_on_heading_bt_node
     - nav2_clear_costmap_service_bt_node
     - nav2_is_stuck_condition_bt_node
     - nav2_goal_reached_condition_bt_node
     - nav2_goal_updated_condition_bt_node
+    - nav2_globally_updated_goal_condition_bt_node
+    - nav2_is_path_valid_condition_bt_node
     - nav2_initial_pose_received_condition_bt_node
     - nav2_reinitialize_global_localization_service_bt_node
     - nav2_rate_controller_bt_node
     - nav2_distance_controller_bt_node
     - nav2_speed_controller_bt_node
     - nav2_truncate_path_action_bt_node
+    - nav2_truncate_path_local_action_bt_node
     - nav2_goal_updater_node_bt_node
     - nav2_recovery_node_bt_node
     - nav2_pipeline_sequence_bt_node
     - nav2_round_robin_node_bt_node
     - nav2_transform_available_condition_bt_node
     - nav2_time_expired_condition_bt_node
+    - nav2_path_expiring_timer_condition
     - nav2_distance_traveled_condition_bt_node
     - nav2_single_trigger_bt_node
+    - nav2_goal_updated_controller_bt_node
     - nav2_is_battery_low_condition_bt_node
     - nav2_navigate_through_poses_action_bt_node
     - nav2_navigate_to_pose_action_bt_node
     - nav2_remove_passed_goals_action_bt_node
     - nav2_planner_selector_bt_node
     - nav2_controller_selector_bt_node
-    - nav2_goal_checker_selector_bt_node    
+    - nav2_goal_checker_selector_bt_node
+    - nav2_controller_cancel_bt_node
+    - nav2_path_longer_on_approach_bt_node
+    - nav2_wait_cancel_bt_node
+    - nav2_spin_cancel_bt_node
+    - nav2_back_up_cancel_bt_node
+    - nav2_assisted_teleop_cancel_bt_node
+    - nav2_drive_on_heading_cancel_bt_node  
 
 bt_navigator_rclcpp_node:
   ros__parameters:
@@ -127,6 +123,7 @@ bt_navigator_rclcpp_node:
 controller_server:
   ros__parameters:
     use_sim_time: True
+    odom_topic: /odom
     controller_frequency: 20.0
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
@@ -152,7 +149,7 @@ controller_server:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
       xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 1.309
+      yaw_goal_tolerance: 0.25
     # goal_checker:
     #   plugin: "nav2_controller::SimpleGoalChecker"
     #   xy_goal_tolerance: 0.25
@@ -163,8 +160,10 @@ controller_server:
     FollowPath:
       plugin: "teb_local_planner::TebLocalPlannerROS"
       footprint_model: # types: "point", "circular", "two_circles", "line", "polygon"
-        type: "polygon"
-        vertices: "[[0.4,0.3],[0.4,-0.3],[-0.4,-0.3],[-0.4,0.3]]"
+        type: "circular"
+        radius: 0.5
+        # type: "polygon"
+        # vertices: "[[0.4,0.3],[0.4,-0.3],[-0.4,-0.3],[-0.4,0.3]]"
 
       # // Trajectory
       teb_autoresize: True
@@ -174,15 +173,15 @@ controller_server:
       max_samples: 20      
       global_plan_overwrite_orientation: true
       allow_init_with_backwards_motion: false #(this is only recommended if the robot is equipped with rear sensors)
-      global_plan_viapoint_sep: 1.0     
-      via_points_ordered: false
       max_global_plan_lookahead_dist: 1.5  
-      # global_plan_prune_distance: 1.0
-      # exact_arc_length: true
       feasibility_check_no_poses: 5
       publish_feedback: true
       control_look_ahead_poses: 5
-
+      # force_reinit_new_goal_dist: 1.0
+      # global_plan_viapoint_sep: -1.0 # การแยกระหว่างแต่ละจุดผ่านที่ต่อเนื่องกันสองจุดที่ดึงมาจากแผนสากล (ถ้าเป็นลบ: ปิดใช้งาน)
+      # via_points_ordered: false # หากเป็นจริง ผู้วางแผนจะปฏิบัติตามลำดับของ via-points in the storage container
+      # global_plan_prune_distance: 1.0 # ระยะห่างระหว่างหุ่นยนต์และ viapoint ของ global plan
+      # exact_arc_length: true #หากเป็นจริง planner จะใช้ความยาวส่วนโค้งที่แน่นอนในการคำนวณความเร็ว ความเร่ง และอัตราการเลี้ยว [-> เวลาซีพียูที่เพิ่มขึ้น] มิฉะนั้นจะใช้การประมาณแบบยุคลิด      
 
     # Robot
       max_vel_x: 0.5
@@ -227,7 +226,7 @@ controller_server:
       weight_inflation: 1.0
       weight_dynamic_obstacle: 1.0
       weight_dynamic_obstacle_inflation: 1.0
-      weight_viapoint: 10.0
+      weight_viapoint: 1.0
       penalty_epsilon: 0.1
       weight_adapt_factor: 2.0
 
@@ -350,21 +349,10 @@ map_server:
 map_saver:
   ros__parameters:
     use_sim_time: True
-    save_map_timeout: 5.0 #5000
+    save_map_timeout: 5000
     free_thresh_default: 0.25
     occupied_thresh_default: 0.65
     map_subscribe_transient_local: True
-
-# planner_server:
-#   ros__parameters:
-#     expected_planner_frequency: 20.0
-#     use_sim_time: True
-#     planner_plugins: ["GridBased"]
-#     GridBased:
-#       plugin: "nav2_navfn_planner/NavfnPlanner"
-#       tolerance: 0.5
-#       use_astar: false
-#       allow_unknown: true
 
 planner_server:
   ros__parameters:
@@ -381,25 +369,34 @@ planner_server_rclcpp_node:
   ros__parameters:
     use_sim_time: True
 
-recoveries_server:
+behavior_server:
   ros__parameters:
+    # local_costmap_topic: local_costmap/costmap_raw
+    # local_footprint_topic: local_costmap/published_footprint
+    # global_costmap_topic: global_costmap/costmap_raw
+    # global_footprint_topic: global_costmap/published_footprint    
     costmap_topic: local_costmap/costmap_raw
-    footprint_topic: local_costmap/published_footprint
+    footprint_topic: local_costmap/published_footprint    
     cycle_frequency: 10.0
-    recovery_plugins: ["spin", "back_up", "wait"]
+    behavior_plugins: ["spin", "backup", "drive_on_heading", "assisted_teleop", "wait"]
     spin:
-      plugin: "nav2_recoveries/Spin"
-    back_up:
-      plugin: "nav2_recoveries/BackUp"
+      plugin: "nav2_behaviors/Spin"
+    backup:
+      plugin: "nav2_behaviors/BackUp"
+    drive_on_heading:
+      plugin: "nav2_behaviors/DriveOnHeading"
     wait:
-      plugin: "nav2_recoveries/Wait"
+      plugin: "nav2_behaviors/Wait"
+    assisted_teleop:
+      plugin: "nav2_behaviors/AssistedTeleop"
     global_frame: odom
-    robot_base_frame: base_footprint
-    transform_timeout: 0.1
-    use_sim_time: true
+    # local_frame: odom
+    robot_base_frame: base_link
+    transform_tolerance: 1.2
+    use_sim_time: True
     simulate_ahead_time: 2.0
-    max_rotational_vel: 1.0
-    min_rotational_vel: 0.4
+    max_rotational_vel: 0.09
+    min_rotational_vel: 0.05
     rotational_acc_lim: 3.2
 
 robot_state_publisher:
@@ -414,6 +411,4 @@ waypoint_follower:
     wait_at_waypoint:
       plugin: "nav2_waypoint_follower::WaitAtWaypoint"
       enabled: True
-      waypoint_pause_duration: 5    
-
-      
+      waypoint_pause_duration: 5
