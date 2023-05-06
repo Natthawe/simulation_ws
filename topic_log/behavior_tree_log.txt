@@ -1,0 +1,320 @@
+timestamp:
+  sec: 1683082325
+  nanosec: 296173368
+event_log:
+- timestamp:
+    sec: 1683082325
+    nanosec: 295973784
+  node_name: NavigateRecovery
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082325
+    nanosec: 295980022
+  node_name: RateController
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082325
+    nanosec: 295980916
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082325
+    nanosec: 295982446
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082325
+    nanosec: 296170282
+  node_name: NavigateWithReplanning
+  previous_status: IDLE
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082325
+  nanosec: 336289987
+event_log:
+- timestamp:
+    sec: 1683082325
+    nanosec: 336086244
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082325
+    nanosec: 336088942
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082325
+    nanosec: 336089255
+  node_name: RateController
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082325
+    nanosec: 336090034
+  node_name: FollowPath
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082325
+    nanosec: 336090865
+  node_name: FollowPath
+  previous_status: IDLE
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082325
+  nanosec: 346060880
+event_log:
+- timestamp:
+    sec: 1683082325
+    nanosec: 346032704
+  node_name: RateController
+  previous_status: SUCCESS
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082326
+  nanosec: 346261418
+event_log:
+- timestamp:
+    sec: 1683082326
+    nanosec: 346059705
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082326
+    nanosec: 346063674
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082326
+  nanosec: 376383014
+event_log:
+- timestamp:
+    sec: 1683082326
+    nanosec: 376182384
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082326
+    nanosec: 376184874
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082326
+    nanosec: 376185233
+  node_name: RateController
+  previous_status: RUNNING
+  current_status: SUCCESS
+---
+timestamp:
+  sec: 1683082326
+  nanosec: 386108691
+event_log:
+- timestamp:
+    sec: 1683082326
+    nanosec: 386040652
+  node_name: RateController
+  previous_status: SUCCESS
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082327
+  nanosec: 386198462
+event_log:
+- timestamp:
+    sec: 1683082327
+    nanosec: 386034149
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082327
+    nanosec: 386037811
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082327
+  nanosec: 416233081
+event_log:
+- timestamp:
+    sec: 1683082327
+    nanosec: 416095342
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082327
+    nanosec: 416098150
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082327
+    nanosec: 416098537
+  node_name: RateController
+  previous_status: RUNNING
+  current_status: SUCCESS
+---
+timestamp:
+  sec: 1683082327
+  nanosec: 426115446
+event_log:
+- timestamp:
+    sec: 1683082327
+    nanosec: 426066543
+  node_name: RateController
+  previous_status: SUCCESS
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082328
+  nanosec: 426258733
+event_log:
+- timestamp:
+    sec: 1683082328
+    nanosec: 426040833
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082328
+    nanosec: 426045319
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082328
+  nanosec: 456263549
+event_log:
+- timestamp:
+    sec: 1683082328
+    nanosec: 456087350
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082328
+    nanosec: 456089725
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082328
+    nanosec: 456090051
+  node_name: RateController
+  previous_status: RUNNING
+  current_status: SUCCESS
+---
+timestamp:
+  sec: 1683082328
+  nanosec: 466125819
+event_log:
+- timestamp:
+    sec: 1683082328
+    nanosec: 466075806
+  node_name: RateController
+  previous_status: SUCCESS
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082329
+  nanosec: 466217972
+event_log:
+- timestamp:
+    sec: 1683082329
+    nanosec: 466042968
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+- timestamp:
+    sec: 1683082329
+    nanosec: 466048178
+  node_name: ComputePathToPose
+  previous_status: IDLE
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082329
+  nanosec: 496273141
+event_log:
+- timestamp:
+    sec: 1683082329
+    nanosec: 496086600
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082329
+    nanosec: 496090244
+  node_name: ComputePathToPose
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082329
+    nanosec: 496091682
+  node_name: RateController
+  previous_status: RUNNING
+  current_status: SUCCESS
+---
+timestamp:
+  sec: 1683082329
+  nanosec: 506088304
+event_log:
+- timestamp:
+    sec: 1683082329
+    nanosec: 506035460
+  node_name: RateController
+  previous_status: SUCCESS
+  current_status: RUNNING
+---
+timestamp:
+  sec: 1683082329
+  nanosec: 826169070
+event_log:
+- timestamp:
+    sec: 1683082329
+    nanosec: 826162989
+  node_name: FollowPath
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082329
+    nanosec: 826165612
+  node_name: FollowPath
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082329
+    nanosec: 826166445
+  node_name: NavigateWithReplanning
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082329
+    nanosec: 826166981
+  node_name: NavigateRecovery
+  previous_status: RUNNING
+  current_status: SUCCESS
+- timestamp:
+    sec: 1683082329
+    nanosec: 826167465
+  node_name: NavigateRecovery
+  previous_status: SUCCESS
+  current_status: IDLE
+---

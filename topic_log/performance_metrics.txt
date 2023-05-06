@@ -1,0 +1,620 @@
+header:
+  stamp:
+    sec: 458
+    nanosec: 811000000
+  frame_id: ''
+real_time_factor: 0.99293978
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 0.03115264797507788
+  real_update_rate: 0.030926204385481666
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 0.031230480949406617
+  real_update_rate: 0.031003199487774764
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 0.031151677517834337
+  real_update_rate: 0.030925042491834854
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 459
+    nanosec: 10000000
+  frame_id: ''
+real_time_factor: 0.9327636010000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.9646344163466
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 98.30973129689312
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.964525889253222
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 459
+    nanosec: 211000000
+  frame_id: ''
+real_time_factor: 0.9008814220000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.983032139763008
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 102.91592725861095
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.983980603282227
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 459
+    nanosec: 411000000
+  frame_id: ''
+real_time_factor: 0.9367672720000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.922733854476638
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 95.06870092137731
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 10.032538330917898
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 459
+    nanosec: 611000000
+  frame_id: ''
+real_time_factor: 0.9359606370000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.07456985037279
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 100.21148632073127
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.965896403530227
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 459
+    nanosec: 809000000
+  frame_id: ''
+real_time_factor: 0.8773946290000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.766375217846322
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 84.88686914731564
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 9.900990099009901
+  real_update_rate: 9.660947315009233
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 460
+    nanosec: 6000000
+  frame_id: ''
+real_time_factor: 0.9155220350000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.961055460686461
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 96.82758927866836
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.961071832446644
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 460
+    nanosec: 205000000
+  frame_id: ''
+real_time_factor: 0.925286793
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.903985122946635
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 111.1111111111111
+  real_update_rate: 101.48404173592107
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.904181206582422
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 460
+    nanosec: 406000000
+  frame_id: ''
+real_time_factor: 0.9828122520000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.929320021994238
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 103.71339591261358
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.92941447345015
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 460
+    nanosec: 606000000
+  frame_id: ''
+real_time_factor: 0.917882555
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.977507604831352
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 92.29539288164399
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 10.08767134641138
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 460
+    nanosec: 805000000
+  frame_id: ''
+real_time_factor: 1.010240131
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.997809080118182
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 104.93797168962412
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.880746601465333
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 461
+    nanosec: 7000000
+  frame_id: ''
+real_time_factor: 0.9000713760000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.790790582645835
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 83.71517919443394
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.790655518360529
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 461
+    nanosec: 206000000
+  frame_id: ''
+real_time_factor: 1.115553493
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.020804593248226
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 108.0075968223301
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 10.020767740519192
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 461
+    nanosec: 405000000
+  frame_id: ''
+real_time_factor: 1.35597633
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.842945276167304
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 91.83986287206393
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.842107110884003
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 461
+    nanosec: 604000000
+  frame_id: ''
+real_time_factor: 0.9693332050000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.010428764582654
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 109.16663500834251
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.903688314765915
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 461
+    nanosec: 805000000
+  frame_id: ''
+real_time_factor: 1.122174505
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.953152105543543
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 96.44749167079462
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.965650793471095
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 462
+    nanosec: 5000000
+  frame_id: ''
+real_time_factor: 0.727222747
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.958877008346972
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 95.05924805283013
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.953726915241885
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 462
+    nanosec: 205000000
+  frame_id: ''
+real_time_factor: 1.282874186
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.070170863912203
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 100.29053164111113
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.1010101010101
+  real_update_rate: 10.070204328776018
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 462
+    nanosec: 406000000
+  frame_id: ''
+real_time_factor: 0.8904108980000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.874464062228713
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 89.49674281079378
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 9.900990099009901
+  real_update_rate: 9.87423054317925
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 462
+    nanosec: 602000000
+  frame_id: ''
+real_time_factor: 0.876938363
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.797991478373275
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 98.42662093634623
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.798105816466212
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 462
+    nanosec: 799000000
+  frame_id: ''
+real_time_factor: 0.9126868950000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.933285077434427
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 101.75569272222933
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.1010101010101
+  real_update_rate: 9.93333964232845
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 462
+    nanosec: 999000000
+  frame_id: ''
+real_time_factor: 0.9198802680000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.087767511580076
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 99.82396044575391
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.1010101010101
+  real_update_rate: 10.087678978500644
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 463
+    nanosec: 199000000
+  frame_id: ''
+real_time_factor: 0.9199395050000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.055919560849143
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 91.68492877639677
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.1010101010101
+  real_update_rate: 10.055862124154862
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 463
+    nanosec: 399000000
+  frame_id: ''
+real_time_factor: 0.9044445310000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.901323999104365
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 102.58264108857415
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.901343900496405
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 463
+    nanosec: 600000000
+  frame_id: ''
+real_time_factor: 0.923862633
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.024632728031975
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 90.43594648000686
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.913386445226463
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 463
+    nanosec: 801000000
+  frame_id: ''
+real_time_factor: 0.926675847
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.064598721077349
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 102.16326629856559
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 10.064532879012267
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 464
+    nanosec: 0
+  frame_id: ''
+real_time_factor: 0.894748898
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.867962322225205
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 99.67919248690015
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.977463802734126
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 464
+    nanosec: 198000000
+  frame_id: ''
+real_time_factor: 0.8818536560000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.931265808650984
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 99.19266101275112
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.931536654128664
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 464
+    nanosec: 395000000
+  frame_id: ''
+real_time_factor: 1.62392628
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.83351882135994
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 99.48678745821802
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 9.833618228003825
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 464
+    nanosec: 595000000
+  frame_id: ''
+real_time_factor: 0.907203925
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 10.042296445437788
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 99.21143772949466
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.0
+  real_update_rate: 10.042268712391953
+  fps: -1.0
+---
+header:
+  stamp:
+    sec: 464
+    nanosec: 794000000
+  frame_id: ''
+real_time_factor: 0.8698352450000001
+sensors:
+- name: default::basic_mobile_bot::gps_link::bmb_gps
+  sim_update_rate: 10.0
+  real_update_rate: 9.899089669814874
+  fps: -1.0
+- name: default::basic_mobile_bot::imu_link::bmb_imu
+  sim_update_rate: 100.0
+  real_update_rate: 100.60490712507091
+  fps: -1.0
+- name: default::basic_mobile_bot::lidar_link::lidar
+  sim_update_rate: 10.1010101010101
+  real_update_rate: 10.009488494618472
+  fps: -1.0
+---
