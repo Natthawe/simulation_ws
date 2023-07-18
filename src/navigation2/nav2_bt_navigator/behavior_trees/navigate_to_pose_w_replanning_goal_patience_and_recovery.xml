@@ -20,11 +20,11 @@
             <RetryUntilSuccessful num_attempts="1">
               <SequenceStar name="CancelingControlAndWait">
                 <CancelControl name="ControlCancel"/>
-                <Wait wait_duration="5"/>
+                <Wait wait_duration="60"/>
               </SequenceStar>
             </RetryUntilSuccessful>
           </PathLongerOnApproach>
-          <RecoveryNode number_of_retries="1" name="FollowPath">
+          <RecoveryNode number_of_retries="2" name="FollowPath">
             <FollowPath path="{path}" controller_id="FollowPath"/>
             <ClearEntireCostmap name="ClearLocalCostmap-Context" service_name="local_costmap/clear_entirely_local_costmap"/>
           </RecoveryNode>
